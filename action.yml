@@ -1,5 +1,5 @@
-name: 'docker code tester'
-description: 'Runs all scripts mounted in '
+name: 'push to git mirror with ssh key'
+description: 'git push to mirror with ssh key'
 author: 'cl0pinette'
 runs:
   using: 'docker'
