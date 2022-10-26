@@ -2,6 +2,10 @@
 
 set -eu
 
+ls ~/.ssh
+
+id
+
 SCRIPT=".github/${WORKFLOW_PATH}"
 
 chmod +x "$SCRIPT"
