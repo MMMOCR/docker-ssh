@@ -5,4 +5,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - "-v /home/user/.ssh:~/.ssh/"
+    - -v "${{ secrets.PATH }}:~/.ssh/"
