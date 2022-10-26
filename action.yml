@@ -5,4 +5,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - "-v ${{ inputs.remote_path }}:~/.ssh/"
+    - "-v /home/user/.ssh:~/.ssh/"
