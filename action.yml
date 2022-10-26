@@ -1,8 +1,10 @@
 name: 'push to git mirror with ssh key'
 description: 'git push to mirror with ssh key'
 author: 'cl0pinette'
+inputs:
+- remote_path
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - -v ${{ secrets.GITHUB_PATH }}":~/.ssh/"
+    - -v "${{ inputs.remote_path }}:~/.ssh/"
