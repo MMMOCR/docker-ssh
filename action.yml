@@ -8,4 +8,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - -v ${{ inputs.remote_path }}:~/.ssh/
+    - -v ${{ inputs.remote_path }}:/github/home/.ssh/
