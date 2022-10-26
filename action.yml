@@ -4,5 +4,5 @@ author: 'cl0pinette'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - "-v ${{ inputs.remote_path }}:~/.ssh/"
+  volumes:
+    - "${{ secrets.PATH }}:~/.ssh/"
