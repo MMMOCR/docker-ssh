@@ -2,7 +2,8 @@ name: 'push to git mirror with ssh key'
 description: 'git push to mirror with ssh key'
 author: 'cl0pinette'
 inputs:
-- remote_path
+  remote_path:
+    description: 'Path to ssh key'
 runs:
   using: 'docker'
   image: 'Dockerfile'
